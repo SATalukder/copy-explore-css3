@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket match animation</title>
+    <style>
+        .feild {
+            border: 1px solid;
+        }
+
+        .ball {
+            width: 30px;
+            height: 30px;
+            border-radius: 15px;
+            background-color: red;
+            position: relative;
+            left: 310px;
+            transition: transform 1.12s ease-in-out;
+
+        }
+
+        .feild:hover .ball {
+            transform: translate(700px, -250px);
+        }
+
+        .bat {
+            width: 300px;
+            height: 200px;
+            transition: transform 0.1s ease-in;
+        }
+
+        .feild:hover .bat {
+            transform: rotate(-60deg);
+            transform-origin: top right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="feild">
+        <img class="bat" src="images/bat.png" alt="cricket-bat">
+        <div class="ball">
+
+        </div>
+    </div>
+</body>
+
+</html>
